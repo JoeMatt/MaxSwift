@@ -1,0 +1,3 @@
+[submodule "MaxSwift/max-sdk"]
+	path = MaxSwift/max-sdk
+	url = https://github.com/Cycling74/max-sdk.git

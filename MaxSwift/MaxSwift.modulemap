@@ -1,0 +1,107 @@
+framework module MaxSwift {
+    umbrella header "MaxSwift.h"
+
+    export *
+    module * { export * }
+}
+
+module Max [extern_c] {
+    
+
+    module Max {
+
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_common.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/max_types.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_prefix.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_mess.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_maxtypes.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_byteorder.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sysmem.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sysfile.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_systime.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_expr.h"
+        // ext_path.h fails on <File.h> You can replace with <CoreServices/CoreServices.h>
+        // header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_path.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_wind.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_proto.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_atomarray.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_atombuf.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_obstring.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_hashtab.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_dictionary.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_obex_util.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/commonsyms.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_strings.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_obex.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_systhread.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_drag.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/jpatcher_api.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_charset.h"
+
+        // This one include would be enough if ext_path.h wasn't broken
+        //header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift//Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext.h"
+        
+        // Bridge to fix variadic post functions
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/MaxCBridge.h"
+        
+        /*
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_anim.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_atomic.h"
+        header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_backgroundtask.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_colors.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_critical.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_database.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_default.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_dictobj.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_event.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_fun.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_globalsymbol.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_itm.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_linklist.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_menu.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_midi.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_numc.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_oms.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_parameter.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_preferences.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_preprocessor.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_proto_win.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_qtimage.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_qtstubs.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_quickmap.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sndfile.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_support.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_symobject.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sysmidi.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sysparallel.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sysprocess.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_syssem.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_sysshmem.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_time.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_timeline.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_track.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_user.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/ext_xmltree.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/indexmap.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/jdataview.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/jgraphics.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/jpatcher_syms.h"
+         header "/Users/jmattiello/Workspace/MaxSwift/MaxSwift/max-sdk/source/c74support/max-includes/jpatcher_utils.h"
+         */
+        
+        //link "MaxAPI.lib"
+        export *
+    }
+    /*
+    module JIT {
+        export *
+    }
+    
+    module MSP {
+        export *
+    }
+    */
+    export *
+    //module * { export * }
+}
+

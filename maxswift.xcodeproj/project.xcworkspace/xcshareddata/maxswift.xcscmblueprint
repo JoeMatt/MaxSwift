@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A67FF2EFF23C3A41B9D51C56F5381D44366D02B4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "20DC6287C6D318433B681296E0BF364C4882CD47" : 0,
+    "A67FF2EFF23C3A41B9D51C56F5381D44366D02B4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2C3F4004-C541-47D5-8B6D-6F2C4EF22BB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "20DC6287C6D318433B681296E0BF364C4882CD47" : "MaxSwift\/MaxSwift\/max-sdk\/",
+    "A67FF2EFF23C3A41B9D51C56F5381D44366D02B4" : "MaxSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "maxswift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "maxswift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Cycling74\/max-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "20DC6287C6D318433B681296E0BF364C4882CD47"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JoeMatt\/MaxSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A67FF2EFF23C3A41B9D51C56F5381D44366D02B4"
+    }
+  ]
+}
